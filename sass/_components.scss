@@ -2,20 +2,35 @@
   background-color: var(--color-card-background);
   border-radius: 15px;
   display: grid;
-  grid-template-rows: 454px;
-  grid-template-columns: [right-container-start] 52vw[right-container-end left-container-start] min-content[left-container-end];
+  grid-template-rows: 1fr;
+  grid-template-columns: [right-container-start] minmax(min-content, 38vw) [right-container-end left-container-start] min-content[left-container-end];
 }
 
 .right-container {
   display: grid;
+  padding: 4.75rem;
+
+  &__heading {
+    font-size: 3.8rem;
+  }
+  &__span {
+    color: var(--color-accent);
+  }
+}
+
+.left-container {
+  display: grid;
+
+  img {
+    align-self: stretch;
+    border-radius: 0 15px 15px 0px;
+  }
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-self: flex-end;
+  align-self: end;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
