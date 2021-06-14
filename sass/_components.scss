@@ -1,0 +1,22 @@
+.container {
+  background-color: var(--color-card-background);
+  border-radius: 15px;
+  display: grid;
+  grid-template-rows: 454px;
+  grid-template-columns: [right-container-start] 52vw[right-container-end left-container-start] min-content[left-container-end];
+}
+
+.right-container {
+  display: grid;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

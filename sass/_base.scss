@@ -1,0 +1,36 @@
+:root {
+  --color-main-background: #090b1a;
+  --color-card-background: #1b1938;
+  --color-accent: #aa5cdb;
+
+  --color-white: #ffffff;
+  --color-white-light-1: #ffffffc0;
+  --color-white-light-2: #ffffff0f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; //1rem = 10px 10px/16px(browser default)  = 62.5%
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--color-white-light-1);
+  background-color: var(--color-main-background);
+  min-height: 100vh;
+
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
