@@ -16,21 +16,39 @@
   &__span {
     color: var(--color-accent);
   }
+
+  &__main-text {
+    font-size: 1.4rem;
+    line-height: 1.7;
+    color: var(--color-white-light-1);
+    padding-right: 6rem;
+    margin-top: -4rem;
+  }
+  &__testimonials {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    &--text
+    {
+      text-transform: uppercase;
+    }
+  }
 }
 
 .left-container {
   display: grid;
+  background-color: var(--color-accent);
 
   img {
     align-self: stretch;
     border-radius: 0 15px 15px 0px;
+    mix-blend-mode: multiply;
   }
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
-  align-self: end;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);

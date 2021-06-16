@@ -42,17 +42,29 @@ body {
     font-size: 3.8rem; }
   .right-container__span {
     color: var(--color-accent); }
+  .right-container__main-text {
+    font-size: 1.4rem;
+    line-height: 1.7;
+    color: var(--color-white-light-1);
+    padding-right: 6rem;
+    margin-top: -4rem; }
+  .right-container__testimonials {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+    .right-container__testimonials--text {
+      text-transform: uppercase; }
 
 .left-container {
-  display: grid; }
+  display: grid;
+  background-color: var(--color-accent); }
   .left-container img {
     align-self: stretch;
-    border-radius: 0 15px 15px 0px; }
+    border-radius: 0 15px 15px 0px;
+    mix-blend-mode: multiply; }
 
 .attribution {
   font-size: 11px;
-  text-align: center;
-  align-self: end; }
+  text-align: center; }
 
 .attribution a {
   color: #3e52a3; }
