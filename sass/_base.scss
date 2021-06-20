@@ -8,6 +8,11 @@
   --color-white-light-2: #ffffff0f;
 }
 
+$bp-largest: 75em; //1200px (1200/16=75)
+$bp-large: 62.5em; //1000px
+$bp-medium: 56.25em; //900px
+$bp-small: 37.5em; //600px
+
 * {
   margin: 0;
   padding: 0;
@@ -28,7 +33,7 @@ body {
   font-family: "Inter", sans-serif;
   color: var(--color-white);
   background-color: var(--color-main-background);
-  min-height: 100vh;
+  height: 100vh;
 
   display: grid;
   justify-content: center;

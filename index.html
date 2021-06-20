@@ -51,15 +51,30 @@
         </div>
       </div>
       <div class="left-container">
-        <img src="/images/image-header-desktop.jpg" alt="Header" />
+        <img
+          srcset="
+            images/image-header-mobile.jpg   300w,
+            images/image-header-desktop.jpg 1000w
+          "
+          sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+          alt="header"
+          src="images/image-header-desktop.jpg"
+        />
       </div>
     </div>
-
     <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Tankica</a>.
+      <span class="attribution__text"
+        >Challenge by
+        <a
+          class="attribution__link"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          >Frontend Mentor.</a
+        >Coded by
+        <a class="attribution__link" href="https://tanicoder.com/"
+          >Tankica.</a
+        ></span
+      >
     </div>
   </body>
 </html>
