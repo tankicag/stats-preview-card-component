@@ -47,7 +47,7 @@ body {
       grid-auto-flow: row; } }
   @media only screen and (max-width: 25em) {
     .container {
-      grid-template-rows: min-content max-content;
+      grid-template-rows: minmax(min-content, 55vw) max-content;
       grid-template-columns: 80vw;
       grid-auto-flow: row; } }
 
@@ -144,6 +144,6 @@ body {
         bottom: -6rem; } }
     @media only screen and (max-width: 25em) {
       .attribution__text {
-        bottom: -8rem; } }
+        bottom: -1rem; } }
   .attribution__link {
     color: #3e52a3; }
