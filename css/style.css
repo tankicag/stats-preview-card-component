@@ -34,7 +34,7 @@ body {
   display: grid;
   grid-auto-flow: column;
   grid-template-rows: 1fr;
-  grid-template-columns: [right-container-start] minmax(min-content, 40vw) [right-container-end left-container-start] max-content [left-container-end]; }
+  grid-template-columns: [right-container-start] minmax(min-content, 41vw) [right-container-end left-container-start] max-content [left-container-end]; }
   @media only screen and (max-width: 56.25em) {
     .container {
       grid-template-rows: 30vh max-content;
@@ -78,7 +78,7 @@ body {
     font-size: 1.4rem;
     line-height: 1.7;
     color: var(--color-white-light-1);
-    padding-right: 7rem;
+    padding-right: 10rem;
     margin-top: -4rem; }
     @media only screen and (max-width: 75em) {
       .right-container__main-text {
