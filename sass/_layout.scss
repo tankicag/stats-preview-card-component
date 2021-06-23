@@ -19,8 +19,14 @@
   }
 
   @media only screen and(max-width: $bp-very-small) {
-    grid-template-rows: minmax(min-content, 55vw) max-content;
-    grid-template-columns: 80vw;
+    grid-template-rows: minmax(min-content, 55vw) min-content;
+    grid-template-columns: 38vh;
+    grid-auto-flow: row;
+  }
+
+  @media only screen and(max-width: $bp-smallest) {
+    grid-template-rows: minmax(min-content, 60vw) min-content;
+    grid-template-columns: 44vh;
     grid-auto-flow: row;
   }
 }
