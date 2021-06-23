@@ -106,20 +106,15 @@
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 1.2rem;
   text-align: center;
+  height: (100vh - 95vh);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 
   &__text {
-    position: absolute;
-    bottom: 0;
-    transform: translate(-50%, -50%);
 
-    @media only screen and(max-width: $bp-medium) {
-      bottom: -6rem;
-    }
-    @media only screen and(max-width: $bp-very-small) {
-      bottom: -1rem;
-    }
   }
 
   &__link {
