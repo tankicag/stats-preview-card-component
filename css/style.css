@@ -56,9 +56,8 @@ body {
       grid-auto-flow: row; } }
   @media only screen and (max-width: 19.75em) {
     .container {
-      grid-template-rows: minmax(max-content, 32vh) max-content;
-      grid-template-columns: 100vw;
-      margin: 5rem; } }
+      grid-template-rows: minmax(max-content, 28vh) max-content;
+      grid-template-columns: 100vw; } }
 
 .right-container {
   display: grid;
