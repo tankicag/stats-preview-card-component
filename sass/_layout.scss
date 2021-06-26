@@ -25,7 +25,7 @@
 
   @media only screen and(max-width: $bp-very-small) {
     grid-template-rows: minmax(max-content, 30vh) max-content;
-    grid-template-columns: 85vw;
+    grid-template-columns: 90vw;
     grid-auto-flow: row;
   }
 
