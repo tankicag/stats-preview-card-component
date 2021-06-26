@@ -4,29 +4,34 @@
   display: grid;
   grid-auto-flow: column;
   grid-template-rows: 1fr;
-  grid-template-columns: [right-container-start] minmax(min-content, 41vw) [right-container-end left-container-start] max-content [left-container-end];
+  grid-template-columns: [right-container-start] minmax(min-content, 42vw) [right-container-end left-container-start] max-content[left-container-end];
+
+  @media only screen and(max-width: $bp-largest) {
+    grid-template-rows: 1fr;
+    grid-template-columns: [right-container-start] minmax(min-content, 38vw) [right-container-end left-container-start] 38vw [left-container-end];
+  }
 
   @media only screen and(max-width: $bp-medium) {
-    grid-template-rows: 30vh max-content;
-    grid-template-columns: 80vw;
+    grid-template-rows: 40vh 50vh;
+    grid-template-columns: 85vw;
     grid-auto-flow: row;
   }
 
   @media only screen and(max-width: $bp-small) {
-    grid-template-rows: 38vh max-content;
+    grid-template-rows: 38vh 50vh;
     grid-template-columns: 75vw;
     grid-auto-flow: row;
   }
 
   @media only screen and(max-width: $bp-very-small) {
-    grid-template-rows: minmax(min-content, 55vw) min-content;
-    grid-template-columns: 38vh;
+    grid-template-rows: 20vh 50vh;
+    grid-template-columns: 85vw;
     grid-auto-flow: row;
   }
 
   @media only screen and(max-width: $bp-smallest) {
-    grid-template-rows: minmax(min-content, 60vw) min-content;
-    grid-template-columns: 44vh;
+    grid-template-rows: 20vh 50vh;
+    grid-template-columns: 90vw;
     grid-auto-flow: row;
   }
 }
