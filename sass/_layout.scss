@@ -12,7 +12,7 @@
   }
 
   @media only screen and(max-width: $bp-medium) {
-    grid-template-rows: 40vh 50vh;
+    grid-template-rows: 40vh max-content;
     grid-template-columns: 85vw;
     grid-auto-flow: row;
   }
@@ -24,13 +24,13 @@
   }
 
   @media only screen and(max-width: $bp-very-small) {
-    grid-template-rows: 20vh max-content;
+    grid-template-rows: minmax(max-content, 30vh) max-content;
     grid-template-columns: 85vw;
     grid-auto-flow: row;
   }
 
   @media only screen and(max-width: $bp-smallest) {
-    grid-template-rows: 30vh max-content;
+    grid-template-rows: minmax(max-content, 32vh) max-content;
     grid-template-columns: 100vw;
     margin: 5rem;
   }
